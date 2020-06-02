@@ -45,24 +45,35 @@
 						<!-- Post -->
 							<section class="post">
 								<header class = "major">
-									<h3>Graduate Thesis : Continuous-time and Complex Growth Transforms for Analog Computing and Optimization</h3>
+									<h3>Thesis : Continuous-time and Complex Growth Transforms for Analog Computing and Optimization</h3>
 									</header>
-									<p>Analog computing and optimization paradigms exploit massive parallelism to search an exponentially large parameter space and employ computational primitives inherent in the physics of the underlying devices to achieve very high energy-efficiency. This makes them promising and practical candidates for solving difficult computational problems involving algebraic and differential equations that are considered to be almost intractable using their digital counterparts. My thesis proposes a dynamical systems approach that exploits naturally occurring analog conservation constraints to solve for a variety of optimization and learning tasks. 
-									To this end, I propose a continuous-time, real and complex domain analog computing framework based on a special class of multiplicative update algorithms called growth transforms. This computational model naturally satisfies conservation constraints for reaching the minimum energy state with respect to a system-level cost function and is generic enough to be applied to different computing paradigms.</p>
+									<p><span class="image fit"><img src="images/Intro.jpg" alt="" /></span></p>
+									<p>Any physical system, ranging from the simplest ones shown in the figure above to something as complex as the human brain, can be thought of as a special-purpose computer. 
+									These systems use the physics of devices and conservation laws to solve a wide range of computing problems. The central theme of my research is to explore if the fundamental 
+									laws of physics, like the principle of minimum energy and the principle of conservation of physical quantities can be used to design a dynamical system, the steady state of which encodes the solution to some optimization or machine learning problem. 
+									In my thesis, I have explored how the Baum-Eagon inequality, which is a multiplicative algorithm originally proposed for maximizing polynomial functions with non-negative coefficients, can be extended to design dynamical systems operating over a conservation manifold (in the real or complex domain), which can then be applied for solving different optimization or learning tasks in an energy-efficient manner. 
+									Such such a system is inherently analog in nature, it automatically inherits the ability of analog computing paradigms to parallelly explore large parameter spaces in real-time at significantly lower levels of power dissipation compared to its digital counterparts.</p>
+									<p> Please visit the (<a href="https://github.com/OindrilaChatterjee/OindrilaChatterjee.github.io/blob/master/Thesis.html">project page</a>) for more details.
 								<article>
 								<header>
-									<h3><center>Decentralized Global Optimization</center></h3>
+									<h3><center>Continuous-time Analog Optimization Using Growth Transforms</center></h3>
 									</header>
-									<p><span class="image fit"><img src="images/Optimization.jpg" alt="" /></span></p>
-									<p>I have developed a continuous-time annealing algorithm for solving non-convex and discrete global optimization problems. The proposed method optimizes a target objective function by continuously evolving a driver functional over a conservation manifold. Additionally, a discrete variant of the model can be used for implementing decentralized optimization algorithms like winner-take-all and ranking. Future work in this direction involves investigating the connection between the proposed global optimization framework and the asymptotic behavior of the tunneling current seen in Fowler-Nordheim quantum-tunneling.</p>
+									<p><span class="image fit"><img src="images/AnalogOpt.jpg" alt="" /></span></p>
+									<p>In this work, we developed a novel continuous-time analog optimization circuit based on growth transforms. 
+									The circuit inherently enforces optimization constraints to converge to a steady-state solution corresponding to a local minimum of an objective function. 
+									The proposed circuit is also generic enough to encompass a multitude of objective functions simply by changing the external circuitry.
+									</p>
 								</article>
 								
 								<article>
 								<header>
-									<h3><center>Resonant Machine Learning</center></h3>
+									<h3><center>Generalized Support Vector Machines Using Growth Transforms</center></h3>
 								</header>
-										<p><span class="image fit"><img src="images/Resonant.jpg" alt="" /></span></p>
-										<p>The growth transform dynamical system model can be extended to the complex domain and can be used for designing energy-efficient resonant machine learning models. The proposed learning model reuses/conserves the network’s reactive energy while dissipating energy only during the process of learning and exploits the phenomenon of electrical resonance for storing and sustaining the learned network parameters.</p>
+										<p><span class="image fit"><img src="images/GeneralizedSVM.jpg" alt="" /></span></p>
+										<p>In this work, we extended the the domain of polynomial growth transforms to bounded real variables in order to develop a generalized
+										support vector machine framework capable of handling both convex and
+										quasi-convex loss functions. Experiments on synthetic and benchmark datasets showed that our algorithm is more scalable and yields better convergence
+										compared to standard quadratic and nonlinear programming solvers.</p>
 								</article>
 								
 								<article>
